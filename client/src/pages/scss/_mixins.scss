@@ -1,0 +1,53 @@
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+@mixin underline-effect() {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: red;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.15s linear;
+
+    }
+    &:hover:after {
+        border: 1px solid black;
+        transform-origin: bottom left;
+        transform: scaleX(1);
+    }
+    &:hover img{
+        transform: scale(1.1);
+    }
+}
+@mixin lined-text() {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    white-space: nowrap;
+    align-items: center;
+    text-align:center;
+    
+    &::before {
+        content: "";
+        height: 3px;
+        background-color: red;
+        display: block;
+    }
+    &::after {
+        content: "";
+        height: 3px;
+        background-color: red;
+        display: block;
+    }
+}

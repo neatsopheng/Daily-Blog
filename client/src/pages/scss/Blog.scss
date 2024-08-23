@@ -1,0 +1,13 @@
+@import 'variable';
+@import 'mixins';
+@import 'base';
+
+.blog-row-article {
+    @include underline-effect();
+}
+.blog .blog-related-list li {
+    @include underline-effect();
+}
+.blog .blog-related .blog-related-header {
+    @include lined-text();
+}

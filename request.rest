@@ -1,0 +1,41 @@
+###     USER
+
+POST http://localhost:8000/api/users/login HTTP/1.1
+content-Type: application/json
+
+
+{
+    "email": "sok123@gmail.com",
+    "password": "12345678"
+}
+###
+GET  http://localhost:8000/api/users HTTP/1.1
+Content-Type: application/json
+
+# {
+#     "id": "66b5fba49d77e3b4309d87e0"
+# }
+
+### 
+GET  http://localhost:8000/api/users/me HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YjZmMzdmM2Q3MDhiYzJhZmFiYmRiYiIsImlhdCI6MTcyMzc3NzgxOSwiZXhwIjoxNzI2MzY5ODE5fQ.5aPftbf0wy_KOduytGCzZbWHN-j54dZ_HDU6QPKqzoU
+
+
+###
+PUT  http://localhost:8000/api/users/66b5fb4ba1405d0bbaa4d1d6 HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "Songhaa"
+}
+###
+POST  http://localhost:8000/api/users/login HTTP/1.1
+content-Type: application/json
+
+{
+    "email": "sok12@gmail.com"
+}
+
+
+### BLOG
