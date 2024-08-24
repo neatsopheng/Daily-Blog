@@ -13,6 +13,7 @@ import PrivateRoute from "./pages/PrivateRoute";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Homepage from "./pages/Homepage";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
               </Route>
             </Routes>
           </div>
+          <Footer />
         </UserContextProvider>
       </BrowserRouter>
       <ToastContainer />

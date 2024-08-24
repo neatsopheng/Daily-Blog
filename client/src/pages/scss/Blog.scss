@@ -5,9 +5,37 @@
 .blog-row-article {
     @include underline-effect();
 }
-.blog .blog-related-list li {
+
+.blog .blog-related-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.blog-related h4 {
+    font-size: 19px;
+}
+.blog-related h6 {
+    color: #3498db;
+    font-weight: 600;
+    font-size: 12px;
+}
+.blog-related span {
+    font-size: 13px;
+    padding: 0 4px;
+}
+
+.blog .blog-related-list li,
+.blog-4 .blog-related-list li
+{
+    list-style-type: none;
+    padding: 10px 0;
     @include underline-effect();
 }
-.blog .blog-related .blog-related-header {
+.blog .blog-related .blog-related-header,
+.blog-2 .blog-related .blog-related-header,
+.blog-4 .blog-related .blog-related-header
+
+{
     @include lined-text();
 }
+

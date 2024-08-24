@@ -1,5 +1,5 @@
 import "./Blog.css";
-import './BlogAnimation.css'
+import "./BlogComponent.css";
 
 const Blog = () => {
   const blogRowContent = [
@@ -86,9 +86,108 @@ const Blog = () => {
           ))}
         </section>
       </div>
-      <div>
-        <h1>Blog 3</h1>
+      <div className="blog-3">
+        <h1>Sponsor</h1>
+        <div className="img-container">
+          <img
+            src="https://connect-assets.prosple.com/cdn/ff/A97WMkjaw8ACrJc8G5RJ6anWyYhjdM0BeoUXfv7eldc/1637913816/public/styles/scale_and_crop_center_890x320/public/2021-11/banner-cocacola-1786x642-2021.jpg?itok=pc8JvSpP"
+            alt="sponsor"
+          />
+        </div>
       </div>
+      <div className="blog-4">
+        {/* <h1>Blog 4</h1> */}
+        <section className="blog-related">
+          <h4 className="blog-related-header">Did you hear?</h4>
+          <ul className="blog-related-list">
+            <li>
+              <span>Security</span>
+              <h4>
+                Cisco employees face a month of silence ahead of second layoff
+                in 2024
+              </h4>
+              <h6>By Lorenzo Franceschi Bicchierai</h6>
+            </li>
+            <li>
+              <span>Security</span>
+              <h4>
+                Cisco employees face a month of silence ahead of second layoff
+                in 2024
+              </h4>
+              <h6>By Lorenzo Franceschi Bicchierai</h6>
+            </li>
+            <li>
+              <span>Security</span>
+              <h4>
+                Cisco employees face a month of silence ahead of second layoff
+                in 2024
+              </h4>
+              <h6>By Lorenzo Franceschi Bicchierai</h6>
+            </li>
+          </ul>
+        </section>
+        <div className="blog-mid-right">
+          <section className="blog-content">
+            <div className="blog-image">
+              <img
+                src="https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/vdw3fdnjrjqyxxscep5n"
+                alt="blogimg"
+              />
+            </div>
+            <div className="blog-heading">
+              <span>Design Journal</span>
+              <h2>The Untitled UI Design Journal</h2>
+              <h6>
+                The Untitled UI Journal feature carefully selected good works
+                from studios amd designers from around the globe. Subscribe for
+                new posts in your inbox.
+              </h6>
+            </div>
+          </section>
+          <section className="blog-related">
+            <h4 className="blog-related-header">In the News</h4>
+            <ul className="blog-related-list">
+              <li>
+                <div className="blog-related-list-info">
+                  <div className="img-container">
+                    <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL01hc29uLWRpeG9uLWxpbmVuZXcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0=" />
+                  </div>
+                  <h4 className="desc">
+                    Cisco employees face a month of silence ahead of second
+                    layoff in 2024
+                  </h4>
+                </div>
+              </li>
+              <li>
+                <div className="blog-related-list-info">
+                  <div className="img-container">
+                    <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL01hc29uLWRpeG9uLWxpbmVuZXcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0=" />
+                  </div>
+                  <h4 className="desc">
+                    Cisco employees face a month of silence ahead of second
+                    layoff in 2024
+                  </h4>
+                </div>
+              </li>
+              <li>
+                <div className="blog-related-list-info">
+                  <div className="img-container">
+                    <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL01hc29uLWRpeG9uLWxpbmVuZXcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9LCJ0b0Zvcm1hdCI6ImF2aWYifX0=" />
+                  </div>
+                  <h4 className="desc">
+                    Cisco employees face a month of silence ahead of second
+                    layoff in 2024
+                  </h4>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div className="blog-5" style={{textAlign: "center"}}>
+          <button>See more</button>
+      </div>
+      {/* Blog End */}
     </div>
   );
 };

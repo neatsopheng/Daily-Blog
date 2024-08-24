@@ -8,7 +8,7 @@ import { MdOutlineDashboard } from "react-icons/md";
 
 
 const Navbar = () => {
-  const { logout, payloadToken } = useUserContext();
+  const { logout } = useUserContext();
   const token = localStorage.getItem("token");
   return (
     <div className="navbar-container">

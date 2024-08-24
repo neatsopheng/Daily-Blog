@@ -1,0 +1,102 @@
+.blog-row-article {
+  position: relative;
+}
+.blog-row-article::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s linear;
+}
+.blog-row-article:hover:after {
+  border: 1px solid black;
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+.blog-row-article:hover img {
+  transform: scale(1.1);
+}
+
+.blog .blog-related-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.blog-related h4 {
+  font-size: 19px;
+}
+
+.blog-related h6 {
+  color: #3498db;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.blog-related span {
+  font-size: 13px;
+  padding: 0 4px;
+}
+
+.blog .blog-related-list li,
+.blog-4 .blog-related-list li {
+  list-style-type: none;
+  padding: 10px 0;
+  position: relative;
+}
+.blog .blog-related-list li::after,
+.blog-4 .blog-related-list li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s linear;
+}
+.blog .blog-related-list li:hover:after,
+.blog-4 .blog-related-list li:hover:after {
+  border: 1px solid black;
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+.blog .blog-related-list li:hover img,
+.blog-4 .blog-related-list li:hover img {
+  transform: scale(1.1);
+}
+
+.blog .blog-related .blog-related-header,
+.blog-2 .blog-related .blog-related-header,
+.blog-4 .blog-related .blog-related-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  white-space: nowrap;
+  align-items: center;
+  text-align: center;
+}
+.blog .blog-related .blog-related-header::before,
+.blog-2 .blog-related .blog-related-header::before,
+.blog-4 .blog-related .blog-related-header::before {
+  content: "";
+  height: 3px;
+  background-color: red;
+  display: block;
+}
+.blog .blog-related .blog-related-header::after,
+.blog-2 .blog-related .blog-related-header::after,
+.blog-4 .blog-related .blog-related-header::after {
+  content: "";
+  height: 3px;
+  background-color: red;
+  display: block;
+}
+
+/*# sourceMappingURL=BlogComponent.css.map */

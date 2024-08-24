@@ -49,6 +49,7 @@ const Register = () => {
   return (
     <div>
         <div className="login-container">
+            <span>Not implement yet</span>
         <h1>Register</h1>
         <form className="login-form" onSubmit={handleSubmit}>
             <div className='form-group'>

@@ -87,6 +87,12 @@ const Login = () => {
           </button>
         </form>
       </div>
+      <div style={{margin: "30px 20px"}}>
+        <p>Free Access:</p>
+        <p>_</p>
+        <p>email: sok12@gmail.com</p>
+        <p>password: 12345678</p>
+      </div>
     </>
   );
 };

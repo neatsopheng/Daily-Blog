@@ -137,3 +137,11 @@
 {
     background-color: #FFFDB5;
 }
+
+
+@media screen and (max-width: 900px) {
+    .navbar-container .nav-right {
+        display: flex;
+        flex-direction: column;
+    }
+}
